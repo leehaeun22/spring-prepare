@@ -1,21 +1,23 @@
 package com.meta.springprepare.memo;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Date;
 
 @Getter
 @Setter
-@NoArgsConstructor
+//@NoArgsConstructor
 @AllArgsConstructor
+@RequiredArgsConstructor
 
 public class Memo {
-    private String username;
-    private String contents;
+    private  final String username;
     private String title;
+    private String contents;
     private Date createAt;
     private Date updatedAt;
+
+    public void writeMemo() {
+
+    }
 }
